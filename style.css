@@ -1,9 +1,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #000;
     color: #222;
-    background: #ffffffff;
+    background: #000;
     padding: 20px;
 }
 
@@ -27,17 +27,17 @@ main{
 }
 
 .card {
-    background: white;
+    background: #000;
     display: flex;
     padding: 15px;
     margin-bottom: 25px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #0001;
-    border: 1px solid #ddd;
+    box-shadow: 0 0 10px #fff;
+    border: 1px solid #fff;
 }
 
 .card a {
-    text-decoration: black;
+    text-decoration: white;
 }
 
 .thumb {
@@ -58,17 +58,17 @@ main{
 
 .info p {
     margin-top: 4px;
-    color: #777;
+    color: #fff;
 }
 
 .sidebar {
     flex: 1;
-    background: white;
+    background: black;
     padding: 20px;
     border-radius: 10px;
     height: fit-content;
-    box-shadow: 0 0 10px #0001;
-    border: 1px solid #ddd;
+    box-shadow: 0 0 10px #fff;
+    border: 1px solid #111;
 }
 
 .sidebar h3 {
@@ -90,33 +90,37 @@ main{
 
 h1 {
     margin: 10px 0;
-    color: #000;
+    color: #fff;
 }
 
 h2 {
     margin: 10px 0 20px 0;
-    color: #555;
+    color: #fff;
     font-weight: normal;
 }
 
 h3 {
     margin: 10px 0 20px 0;
-    color: #555;
+    color: #fff;
     font-weight: normal;
 }
 
 .sep {
     width: 80%;
     height: 2px;
-    background: #ddd;
+    background: #000;
     margin: 25px auto;
     border-radius: 5px;
 }
 
 a {
-    color: #000;
-    text-decoration: black;
+    color: #fff;
+    text-decoration: none;
     font-size: inherit;
+}
+
+p {
+    color: #fff;
 }
 
 a:hover {
@@ -133,8 +137,8 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 12px 40px;
-    background: white;
-    border-bottom: 1px solid #ddd;
+    background: black;
+    border-bottom: 1px solid #111;
 }
 
 .container {
@@ -169,7 +173,7 @@ ul{
 
 .header {
     width: 100%;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #000;
 }
 
 .main-nav {
@@ -198,7 +202,7 @@ ul{
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #000;
 }
 
 .sub-item {
@@ -207,10 +211,14 @@ ul{
     padding: 10px 0;
     border: 0.5px dashed #ccc;
     font-size: 14px;
-    color: #333;
+    color: #fff;
     text-decoration: none;
 }
 
 .sub-item.active {
     font-weight: bold;
+}
+
+.points {
+    color: #fff;
 }
