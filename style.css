@@ -77,6 +77,36 @@ a:hover {
     box-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
 
+/* CARD */
+.card {
+    background-color: #000;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* SIDEBAR */
+.sidebar {
+    background-color: #000;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
 /* TÍTULOS */
 h1, h2, h3 {
     margin: 10px 0;
