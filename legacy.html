@@ -30,8 +30,13 @@
     </div>
 </header>
 
-    <section class="list">
+<main>
 
+<section class="list">
+
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Pesquisar level...">
+</div>
         <div class="card">
             <div class="info">
                 <h2>The Nightmare</h2>
@@ -86,24 +91,62 @@
             </div>
         </div>
 
+        <div class="card">
+            <div class="info">
+                <h2>BP Night</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="info">
+                <h2>Decode</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="info">
+                <h2>NODE</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="info">
+                <h2>Chaos Madness</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="info">
+                <h2>B</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="info">
+                <h2>rafabirds</h2>
+            </div>
+        </div>
+
     </section>
 
-    <aside class="sidebar">
+<script>
+const searchInput = document.getElementById("searchInput");
+const cards = document.querySelectorAll(".card");
 
-    <h3>Editor da Lista</h3>
-    <ul>
-        <li>yuridakbrada</li>
-        <li>icarrierpotatoes</li>
-    </ul>
-    <br>
+searchInput.addEventListener("input", function () {
+    const value = searchInput.value.toLowerCase();
 
-    <h3>Analista de Submits</h3>
-    <ul>
-        <li>yuridakbrada</li>
-        <li>RuhtraGG</li>
-        <li>Liuytz</li>
-    </ul>
-    <br>
+    cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+
+        if (text.includes(value)) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});
+</script>
 
 </body>
 </html>
