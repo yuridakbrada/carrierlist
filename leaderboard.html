@@ -25,12 +25,15 @@
         <a href="index.html" class="sub-item">Main List</a>
         <a href="extended.html" class="sub-item">Extended List</a>
         <a href="legacy.html" class="sub-item">Legacy List</a>
-        <a href="mobile.html" class="sub-item">Mobile List</a>
         <a href="#" class="sub-item active">Leaderboard</a>
     </div>
 </header>
 
-    <section class="list">
+<section class="list">
+
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Pesquisar jogador...">
+</div>
 
     <div class="card">
         <h1><a href="player/index1.html">1. Andre0997</a></h1>
@@ -68,7 +71,30 @@
         <h1><a href="player/index9.html">9. AlemaneiroGD</a></h1>
     </div>
 
+    <div class="card">
+        <h1><a href="player/index10.html">10. SpeedPotatoPC</a></h1>
+    </div>
+
     </section>
+
+<script>
+const searchInput = document.getElementById("searchInput");
+const cards = document.querySelectorAll(".card");
+
+searchInput.addEventListener("input", function () {
+    const value = searchInput.value.toLowerCase();
+
+    cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+
+        if (text.includes(value)) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});
+</script>
     
 </body>
 </html>
