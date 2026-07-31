@@ -39,9 +39,17 @@
 
 <section class="list">
 
-<div class="search-box">
-    <input type="text" id="searchInput" placeholder="Pesquisar level...">
-</div>
+        <div class="card">
+            <div class="info">
+                <h2>Artificial Powder</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="info">
+                <h2>Rhombus</h2>
+            </div>
+        </div>
 
         <div class="card">
             <div class="info">
@@ -170,25 +178,6 @@
         </div>
 
     </section>
-
-<script>
-const searchInput = document.getElementById("searchInput");
-const cards = document.querySelectorAll(".card");
-
-searchInput.addEventListener("input", function () {
-    const value = searchInput.value.toLowerCase();
-
-    cards.forEach(card => {
-        const text = card.innerText.toLowerCase();
-
-        if (text.includes(value)) {
-            card.style.display = "";
-        } else {
-            card.style.display = "none";
-        }
-    });
-});
-</script>
 
 </body>
 </html>
