@@ -29,6 +29,7 @@ body {
     max-width: 1100px;
     margin: auto;
     padding: 12px 16px;
+    position: relative;
 }
 
 /* LOGO */
@@ -47,7 +48,8 @@ body {
 .categories {
     display: flex;
     gap: 14px;
-    margin-left: 20px;
+    position: absolute;
+    right: 16px;
 }
 
 .categories a {
@@ -175,12 +177,11 @@ main {
 /* SIDEBAR */
 .sidebar {
     width: 260px;
-    position: sticky;
-    top: 90px;
     padding: 14px;
     background: #14151a;
     border: 1px solid #24252b;
     border-radius: 6px;
+    align-self: flex-start;
 }
 
 .sidebar h3 {
@@ -220,12 +221,87 @@ main {
     padding: 3px 0;
 }
 
-.discord-widget {
-    width: 100%;
-    height: 400px;
-    border: none;
-    border-radius: 6px;
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+/* UPDATE DA LISTA */
+.list-update {
+    background: #16191f;
+    border: 1px solid #2a2f38;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.list-update p {
+    font-size: 12px;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.list-update span {
+    display: block;
+    margin-top: 10px;
+    font-size: 11px;
+    color: #7aa2ff;
+}
+
+.update-text {
+    font-size: 12px;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.update-date {
+    display: block;
+    margin-top: 10px;
+    font-size: 11px;
+    color: #7aa2ff;
+}
+
+/* ESTATÍSTICAS */
+.stats {
+    list-style: none;
+}
+
+.stats li {
+    font-size: 12px;
+    color: #bbb;
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats span {
+    color: #7aa2ff;
+}
+
+/* SUBMIT */
+.submit-text {
+    font-size: 12px;
+    color: #bbb;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.submit-button {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #7aa2ff;
+    color: #0c0d10;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.15s;
+}
+
+.submit-button:hover {
+    background: #ffffff;
+}   
 
 /* RESPONSIVO */
 @media (max-width: 900px) {
