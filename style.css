@@ -31,7 +31,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1100px;
+    max-width: 1400px;
     margin: auto;
     padding: 12px 16px;
     position: relative;
@@ -49,11 +49,11 @@ body {
     transform: scale(1.04);
 }
 
-/* CATEGORIES (AGORA MAIS LIMPO, SEM “BOTÃO”) */
+/* CATEGORIES */
 .categories {
     display: flex;
     gap: 14px;
-    position: absolute;
+    position: static;
     right: 16px;
 }
 
@@ -100,11 +100,11 @@ body {
 
 /* LAYOUT */
 main {
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 25px auto;
-    padding: 0 14px;
+    padding: 0 20px;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 /* LISTA */
@@ -152,8 +152,8 @@ main {
 
 /* THUMB */
 .level-thumb {
-    width: 130px;
-    height: 70px;
+    width: 160px;
+    height: 85px;
     object-fit: cover;
     border: 1px solid #2a2c35;
     border-radius: 4px;
@@ -366,4 +366,220 @@ main {
     color: #7aa2ff;
     font-size: 12px;
     margin-left: 6px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .topbar {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+
+    .categories {
+        position: static;
+        margin-left: auto;
+        gap: 8px;
+    }
+
+    .categories a {
+        font-size: 11px;
+    }
+
+    .tabs {
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .tab {
+        white-space: nowrap;
+        padding: 10px 14px;
+    }
+
+    main {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+
+    .card {
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .level-thumb {
+        width: 100px;
+        height: 55px;
+    }
+
+    .info h2 {
+        font-size: 14px;
+    }
+
+    .info p,
+    .points {
+        font-size: 11px;
+    }
+
+    .sidebar {
+        padding: 12px;
+    }
+}
+
+/* LEADERBOARD */
+
+.leaderboard {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 0 14px;
+}
+
+.leaderboard-search {
+    margin-bottom: 20px;
+}
+
+.leaderboard-search input {
+    width: 100%;
+    padding: 12px 14px;
+    background: #16191f;
+    border: 1px solid #303640;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.leaderboard-search input:focus {
+    border-color: #61a8ff;
+}
+
+.leaderboard-search input::placeholder {
+    color: #8b929d;
+}
+
+.ranking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rank-card {
+    display: flex;
+    align-items: center;
+    background: #1b1f27;
+    border: 1px solid #303640;
+    border-radius: 8px;
+    padding: 16px 20px;
+    transition: .15s;
+}
+
+.rank-card:hover {
+    border-color: #61a8ff;
+    background: #202630;
+}
+
+/* TOP 3 */
+
+.rank-card:nth-child(1) {
+    border-color: #d8b84c;
+}
+
+.rank-card:nth-child(1) .rank-position {
+    color: #d8b84c;
+}
+
+.rank-card:nth-child(2) {
+    border-color: #bfc3c7;
+}
+
+.rank-card:nth-child(2) .rank-position {
+    color: #bfc3c7;
+}
+
+.rank-card:nth-child(3) {
+    border-color: #cd7f32;
+}
+
+.rank-card:nth-child(3) .rank-position {
+    color: #cd7f32;
+}
+
+/* TOP 4 - 8 */
+
+.rank-card:nth-child(4),
+.rank-card:nth-child(5),
+.rank-card:nth-child(6),
+.rank-card:nth-child(7),
+.rank-card:nth-child(8) {
+    border-color: #4b6fa8;
+}
+
+.rank-card:nth-child(4) .rank-position,
+.rank-card:nth-child(5) .rank-position,
+.rank-card:nth-child(6) .rank-position,
+.rank-card:nth-child(7) .rank-position,
+.rank-card:nth-child(8) .rank-position {
+    color: #7aa2ff;
+}
+
+.rank-position {
+    width: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #61a8ff;
+}
+
+.player-info {
+    flex: 1;
+}
+
+.player-info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.player-info p {
+    margin-top: 3px;
+    color: #9ca4b2;
+    font-size: 13px;
+}
+
+.player-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: .15s;
+}
+
+.player-info a:hover {
+    color: #61a8ff;
+}
+
+.flag {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.rank-points {
+    font-size: 18px;
+    font-weight: bold;
+    color: #61a8ff;
+}
+
+
+@media (max-width: 700px) {
+
+    .rank-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .rank-position {
+        width: auto;
+    }
+
 }

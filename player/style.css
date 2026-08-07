@@ -53,10 +53,11 @@ body {
 .player-card {
     width: 100%;
     max-width: 950px;
-    background: #1b1f27;
-    border: 1px solid #303640;
-    border-radius: 6px;
+    background: linear-gradient(145deg, #1d222b, #161a21);
+    border: 1px solid #343b48;
+    border-radius: 14px;
     overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
 /* ===== TOPO ===== */
@@ -70,16 +71,19 @@ body {
 }
 
 .player-avatar {
-    width: 90px;
-    height: 90px;
-    border-radius: 50px;
-    border: 2px solid #3f78ff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #61a8ff;
     object-fit: cover;
+    box-shadow: 0 0 20px rgba(97,168,255,0.35);
 }
 
-.player-top h1 {
-    font-size: 34px;
-    font-weight: bold;
+.player-top {
+    font-size: 23px;
+    background: linear-gradient(90deg,#ffffff,#61a8ff);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 /* ===== ESTATÍSTICAS ===== */
@@ -92,10 +96,16 @@ body {
 }
 
 .stat-box {
-    background: #232833;
-    border: 1px solid #323844;
-    border-radius: 5px;
-    padding: 18px;
+    background: #171b22;
+    border: 1px solid #303844;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.stat-box:hover {
+    border-color: #61a8ff;
+    transform: translateY(-3px);
 }
 
 .stat-box h3 {
