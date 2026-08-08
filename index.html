@@ -1,1045 +1,378 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Carrier List - Main List</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="carrierlist_favicon.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrier List</title>
+<link rel="icon" href="carrierlist_favicon.png">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111317;
+    color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.topbar {
+    height: 65px;
+    padding: 0 30px;
+    background: #191c22;
+    border-bottom: 1px solid #2c313a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px;
+    display: block;
+}
+
+.nav {
+    display: flex;
+    gap: 22px;
+}
+
+.nav a {
+    color: #9ca4b2;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .15s;
+}
+
+.nav a:hover {
+    color: #61a8ff;
+}
+
+.hero {
+    max-width: 1100px;
+    margin: 35px auto 20px;
+    padding: 75px 30px;
+    background: #1b1f27;
+    border: 1px solid #303640;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero img {
+    width: 190px;
+    max-width: 70%;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.tagline {
+    color: #61a8ff;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.description {
+    max-width: 650px;
+    margin: auto;
+    color: #8b929d;
+    font-size: 14px;
+}
+
+.buttons {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.button {
+    padding: 11px 23px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .15s;
+}
+
+.primary {
+    background: #61a8ff;
+    color: #111317;
+}
+
+.primary:hover {
+    background: #82baff;
+}
+
+.secondary {
+    background: #16191f;
+    border: 1px solid #303640;
+    color: #61a8ff;
+}
+
+.secondary:hover {
+    border-color: #61a8ff;
+    background: #202630;
+}
+
+.content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px 40px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 35px 0 18px;
+}
+
+.section-title h2 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.section-title p {
+    color: #737b87;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: #1b1f27;
+    border: 1px solid #303640;
+    border-radius: 8px;
+    padding: 24px;
+    transition: .15s;
+}
+
+.card:hover {
+    background: #202630;
+    border-color: #61a8ff;
+    transform: translateY(-2px);
+}
+
+.card-number {
+    color: #61a8ff;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    color: #fff;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #8b929d;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #61a8ff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.info {
+    margin-top: 15px;
+    padding: 28px;
+    background: #1b1f27;
+    border: 1px solid #303640;
+    border-radius: 8px;
+}
+
+.info h2 {
+    color: #61a8ff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    color: #8b929d;
+    font-size: 14px;
+    max-width: 850px;
+}
+
+.footer {
+    border-top: 1px solid #2c313a;
+    background: #191c22;
+    padding: 22px;
+    text-align: center;
+    color: #626a76;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .topbar {
+        height: auto;
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        margin: 20px 14px;
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .content {
+        padding: 0 14px 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 </head>
+
 <body>
 
-<header class="header">
+<header class="topbar">
+<a href="index.html" class="logo">
+<img src="carrierlist_logo.png" alt="Carrier List">
+</a>
 
-    <div class="topbar">
-
-        <a href="index.html" class="logo">
-            <img src="carrierlist_logo.png" alt="Carrier List">
-        </a>
-
-        <div class="categories">
-            <a href="https://discord.gg/hBeWmEpcaC" class="cat" target="_blank">Discord</a>
-            <a href="submit-guide.html" class="cat">Submit Guide</a>
-            <a href="leaderboard.html" class="cat">Leaderboard</a>
-        </div>
-
-    </div>
-
-    <nav class="tabs">
-        <a href="index.html" class="tab active">Main List</a>
-        <a href="#extended" class="tab">Extended List</a>
-        <a href="legacy.html" class="tab">Legacy List</a>
-    </nav>
-
+<nav class="nav">
+<a href="https://discord.gg/hBeWmEpcaC">Discord</a>
+<a href="submit-guide.html">Submit Guide</a>
+<a href="leaderboard.html">Leaderboard</a>
+</nav>
 </header>
 
 <main>
 
-<section class="list">
+<section class="hero">
+<img src="carrierlist_logo.png" alt="Carrier List">
 
-<div class="search-box">
-    <input type="text" id="searchInput" placeholder="🔎 Pesquisar nível">
-</div>
-<div class="card">
-    <img src="thumbs/solar_flare.avif" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#1 – Solar Flare</h2>
-        <p>by Linear</p>
-        <span class="points">250 pontos (75%) — 1000 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/judgement_knights.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#2 – Judgement Knights</h2>
-        <p>by HangerLord</p>
-        <span class="points">225 pontos (75%) — 900 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/widestep.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#3 – Widestep</h2>
-        <p>by Demishio</p>
-        <span class="points">203 pontos (75%) — 810 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/thinking_space.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#4 – Thinking Space</h2>
-        <p>by Atomic</p>
-        <span class="points">182 pontos (75%) — 729 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/renevant.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#5 – Renevant</h2>
-        <p>by nicroplays</p>
-        <span class="points">164 pontos (75%) — 656 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/shimmer.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#6 – shimmer</h2>
-        <p>by Amplittron</p>
-        <span class="points">148 pontos (75%) — 590 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/ta1lsd0ll.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#7 – ta1LSD0ll</h2>
-        <p>by ta1lsdoll</p>
-        <span class="points">133 pontos (75%) — 531 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card new">
-    <img src="thumbs/rust.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#8 – Rust <span class="badge-new">NOVO</span></h2>
-        <p>by neigefeu</p>
-        <span class="points">119 pontos (75%) — 477 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/bloodlust.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#9 – Bloodlust</h2>
-        <p>by knobbelboy</p>
-        <span class="points">108 pontos (75%) — 430 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/arctic_lights.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#10 – Arctic Lights</h2>
-        <p>by EndLevel</p>
-        <span class="points">97 pontos (75%) — 387 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/hyper_paracosm.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#11 – Hyper Paracosm</h2>
-        <p>by ViRuZ</p>
-        <span class="points">348 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/sonic_wave_rebirth.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#12 – Sonic Wave Rebirth <span class="badge-new">NOVO</span></h2>
-        <p>by Serponge</p>
-        <span class="points">313 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/sonic_wave.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#13 – Sonic Wave</h2>
-        <p>by Cyclic</p>
-        <span class="points">282 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/the_hell_zone.avif" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#14 – The Hell Zone</h2>
-        <p>by Stormfly</p>
-        <span class="points">253 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/balengu_vortex.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#15 – Balengu Vortex</h2>
-        <p>by lTemp</p>
-        <span class="points">228 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/erebus.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#16 – ErebuS</h2>
-        <p>by Platnuu</p>
-        <span class="points">205 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/blade_of_justice.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#17 – Blade of Justice</h2>
-        <p>by Manix648</p>
-        <span class="points">185 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/multition.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#18 – Multition (Solo)</h2>
-        <p>by Mulpan</p>
-        <span class="points">166 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/sakupen_hell.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#19 – Sakupen Hell <span class="badge-new">NOVO</span></h2>
-        <p>by TrusTa</p>
-        <span class="points">149 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/mulluna.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#20 – MulLuna (Solo)</h2>
-        <p>by Mulpan</p>
-        <span class="points">134 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/moment.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#21 – moment</h2>
-        <p>by lexycat</p>
-        <span class="points">121 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/bloodbath.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#22 – Bloodbath</h2>
-        <p>by Riot</p>
-        <span class="points">109 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/sigma_interface.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#23 – Sigma Interface</h2>
-        <p>by Platnuu</p>
-        <span class="points">98 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/the_hell_dignity.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#24 – The Hell Dignity</h2>
-        <p>by Stormfly</p>
-        <span class="points">88 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/semicolon_3.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#25 – Semicolon 3</h2>
-        <p>by TheRealXFuture</p>
-        <span class="points">79 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/reflection.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#26 – Reflective</h2>
-        <p>by Mojitoz</p>
-        <span class="points">71 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/necropolix.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#27 – NecropoliX</h2>
-        <p>by Namtar</p>
-        <span class="points">64 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/backlights.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#28 – Backlights</h2>
-        <p>by kodex360</p>
-        <span class="points">58 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/robi.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#29 – Robi</h2>
-        <p>by robianny</p>
-        <span class="points">53 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/cataclysm.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#30 – Cataclysm</h2>
-        <p>by GgBoy</p>
-        <span class="points">47 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/the_lost_existence.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#31 – The Lost Existence</h2>
-        <p>by JonathanGD</p>
-        <span class="points">42 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/niwa.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#32 – Niwa</h2>
-        <p>by Teno</p>
-        <span class="points">38 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/precipitance.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#33 – Precipitance</h2>
-        <p>by Extravagon</p>
-        <span class="points">34 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/sweater_weather.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#34 – Sweater Weather <span class="badge-new">NOVO</span></h2>
-        <p>by VelYT</p>
-        <span class="points">30 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/acu.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#35 – Acu</h2>
-        <p>by neigefeu</p>
-        <span class="points">27 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/through_the_decay.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#36 – Through The Decay <span class="badge-new">NOVO</span></h2>
-        <p>by sparktwo</p>
-        <span class="points">25 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/thanatophobia.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#37 – Thanatophobia</h2>
-        <p>by ARtu</p>
-        <span class="points">22 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/ice_carbon_diablo_x.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#38 – Ice Carbon Diablo X</h2>
-        <p>by roadbose</p>
-        <span class="points">20 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/crazy_iii.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#39 – CraZy III</h2>
-        <p>by DavJT</p>
-        <span class="points">18 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/hi.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#40 – hi</h2>
-        <p>by Krmal</p>
-        <span class="points">16 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/invisible_deadlocked.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#41 – Invisible Deadlocked</h2>
-        <p>by Krmal</p>
-        <span class="points">14 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/infinity_lol.png" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#42 – Infinity lol</h2>
-        <p>by Icarrierpotato</p>
-        <span class="points">13 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/necropolis.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#43 – Necropolis</h2>
-        <p>by IIINePtunEIII</p>
-        <span class="points">12 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/flat_major.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#44 – Flat Major</h2>
-        <p>by EndLevel</p>
-        <span class="points">11 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/butiti_ii.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#45 – Butiti II</h2>
-        <p>by JonathanGD</p>
-        <span class="points">10 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/acropolis.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#46 – Acropolis</h2>
-        <p>by Zobros</p>
-        <span class="points">9 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/bit_reaper.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#47 - Bit Reaper</h2>
-        <p>by Vlacc</p>
-        <span class="points">8 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/ultra_funky.png" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#48 – Ultra Funky</h2>
-        <p>by Icarrierpotato</p>
-        <span class="points">7 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/supersonic.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#49 – Supersonic</h2>
-        <p>by ZenthicAlpha</p>
-        <span class="points">6 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card" id="extended">
-    <img src="thumbs/denouement.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#50 – Denouement</h2>
-        <p>by Synactive GD</p>
-        <span class="points">5 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/lit_fuse.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#51 – Lit Fuse</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/slaughterhouse.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#52 – SlaughterHouse</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/death_note.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#53 – Death Note</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/manic.png" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#54 – Manic</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/poltergeist.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#55 – Poltergeist</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/sonic_wave_universe.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#56 – Sonic Wave Universe</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/plasma_pulse.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#57 – Plasma Pulse</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-    
-<div class="card">
-    <img src="thumbs/ultra_fast_collab.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#58 – ULTRA FAST COLLAB</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/ultimate_demon_mix.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#59 – Ultimate Demon Mix</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/windy_landscape.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#60 – Windy Landscape</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/magma_bound.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#61 – Magma Bound</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/outpost.png" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#62 – Outpost</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/horntail_cave.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#63 – Horntail Cave</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/tendo.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#64 – TENDO</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/crazy_ii.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#65 – CraZy II</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/puzzle_trials.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#66 – Puzzle Trials</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/the_furious.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#67 - The Furious</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/stalemate.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#68 – Stalemate</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/i_cant_fix_you.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#69 – I Cant Fix You</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/cant_let_troll_3xrow.png" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#70 – Cant let troll 3xrow</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/whatsapp_circles.webp" class="level-thumb" loading="lazy">  
-    <div class="info">
-        <h2>#71 – Whatsapp Circles</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/shonic_wave.png" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#72 – Shonic Wave</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/badland.png" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#73 – Badland</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/hellaven_ii.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#74 – Hellaven II</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/future_funk.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#75 – Future Funk</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/crazy.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#76 – CraZy</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/cant_troll_twice.png" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#77 – Cant troll twice</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/toe_iii.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#78 – TOE III</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/widder.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#79 – widder</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/double_dash.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#80 – Double Dash</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/different_descent.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#81 – Different Descent</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/potatoguy_adven_3.png" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#82 – Potatoguy adven 3</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/nine_circles.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#83 – Nine Circles</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
+<h1>Carrier List</h1>
+<p class="tagline">A lista acessível.</p>
 
-<div class="card">
-    <img src="thumbs/jawbreaker.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#84 – Jawbreaker</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/troll_machine.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#85 – Troll Machine</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/trollgeist.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#86 – Trollgeist</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/troll_out.jpg" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#87 – Troll Out</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/syobon_action_3.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#88 – Syobon Action 3</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/underground.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#89 – Underground</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/cant_let_troll.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#90 – Cant let troll</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/megalovania.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#91 – Megalovania</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/golden_hope.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#92 – Golden Hope</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
-
-<div class="card">
-    <img src="thumbs/tower_descent.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#93 – Tower Descent</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
+<p class="description">
+Uma lista de dificuldade de Geometry Dash feita pra ser acessível e independente.
+</p>
 
-<div class="card">
-    <img src="thumbs/torch.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#94 – Torch</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
+<div class="buttons">
+<a href="lista.html" class="button primary">Ver a lista</a>
+<a href="https://discord.gg/hBeWmEpcaC" class="button secondary">Acessar o Discord</a>
 </div>
+</section>
 
-<div class="card">
-    <img src="thumbs/fire_temple.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#95 – Fire Temple</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
+<div class="content">
 
-<div class="card">
-    <img src="thumbs/darkness_keeper.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#96 – Darkness Keeper</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
+<section class="section-title">
+<h2>Explore a Carrier List</h2>
+<p>Encontre tudo o que você precisa em um só lugar.</p>
+</section>
 
-<div class="card">
-    <img src="thumbs/troll_madness.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#97 – Troll Madness</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
-</div>
+<section class="cards">
 
 <div class="card">
-    <img src="thumbs/acousticophobia.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#98 – Acousticophobia</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
+<p class="card-number">01 · Rankings</p>
+<h3>Main List</h3>
+<p>
+Confira os levels atualmente classificados pela Carrier List,
+organizados do mais difícil ao menos difícil.
+</p>
+<a href="lista.html">Ver Main List →</a>
 </div>
 
 <div class="card">
-    <img src="thumbs/steelcore.png" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#99 – STEELCORE</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
+<p class="card-number">02 · Arquivo</p>
+<h3>Legacy List</h3>
+<p>
+Levels que já fizeram parte da classificação ou que
+não se encaixam mais nas listas atuais.
+</p>
+<a href="legacy.html">Ver Legacy List →</a>
 </div>
 
 <div class="card">
-    <img src="thumbs/hellaven.webp" class="level-thumb" loading="lazy">
-    <div class="info">
-        <h2>#100 – Hellaven</h2>
-        <span class="points">1,1 pontos (100%)</span>
-    </div>
+<p class="card-number">03 · Jogadores</p>
+<h3>Leaderboard</h3>
+<p>
+Veja os jogadores com maior pontuação na Carrier List
+e acompanhe suas posições no ranking.
+</p>
+<a href="leaderboard.html">Ver Leaderboard →</a>
 </div>
 
 </section>
 
-<div class="sidebar-container">
+<section class="info">
+<h2>Como funciona?</h2>
+<p>
+A equipe da Carrier List analisa os submits e pode jogar os levels
+para avaliar sua dificuldade. As posições podem ser reavaliadas,
+movidas ou alteradas conforme novas informações, mudanças nas
+físicas do jogo ou alterações significativas nos levels.
+</p>
+</section>
 
-<aside class="sidebar">
+<section class="info">
+<h2>Quer participar?</h2>
+<p>
+Antes de enviar uma completion, consulte o Submit Guide e confira
+todos os requisitos da Carrier List. Isso ajuda a equipe a analisar
+os submits de forma mais rápida e consistente.
+</p>
 
-    <div class="sidebar-section">
-        <h3>Fundadores</h3>
-        <ul>
-            <li title="Criador da ideia original da Carrier List, que começou como uma lista dos levels que ele completou.">
-               <a href="https://www.youtube.com/@IcarrierI">icarrierpotatoes</a>
-            </li>
-            <li title="Criador da primeira versão do site da Carrier List.">
-                <a href="https://www.youtube.com/@VeryLixQ">VeryLixQ</a>
-            </li>
-            <li title="Responsável pela evolução da versão atual da Carrier List, incluindo organização, site e manutenção.">
-                <a href="https://www.youtube.com/@yuridakbrada">yuridakbrada</a>
-            </li>
-        </ul>
-    </div>
+<div class="buttons" style="justify-content:flex-start;margin-top:18px;">
+<a href="submit-guide.html" class="button primary">Ler o Submit Guide</a>
+</div>
+</section>
 
-    <div class="sidebar-section">
-        <h3>Editor da Lista</h3>
-        <ul>
-            <li title="Editor da lista experiente, responsável pela manutenção e evolução da Carrier List atual.">
-                <a href="https://www.youtube.com/@yuridakbrada">yuridakbrada</a>
-            </li>
+<section class="info credits">
+    <h2>Créditos</h2>
+    <p><strong>Fundadores:</strong> icarrierpotatoes, VeryLixQ, yuridakbrada</p>
+    <p><strong>Editor da Lista:</strong> yuridakbrada, icarrierpotatoes, Liuytz</p>
+    <p><strong>Analistas de Submits:</strong> yuridakbrada, RuhtraGG, Nobre100, Betoneira</p>
+    <p><strong>Logo:</strong> Snukzinkk</p>
+</section>
 
-            <li title="Editor antigo da lista, participou de fases anteriores da evolução da Carrier List.">
-                <a href="https://www.youtube.com/@IcarrierI">icarrierpotatoes</a>
-            </li>
-
-            <li title="Editor novo da lista, entrou recentemente para ajudar na manutenção do projeto.">
-                <a href="https://www.youtube.com/@Liuytz">Liuytz</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="sidebar-section">
-        <h3>Analista de Submits</h3>
-        <ul>
-            <li title="Analisa submits e participa das decisões de dificuldade dos níveis.">
-                <a href="https://www.youtube.com/@yuridakbrada">yuridakbrada</a>
-            </li>
-            <li title="Analisa a dificuldade dos níveis enviados.">
-                <a href="https://www.youtube.com/@Ruhtra_GG">RuhtraGG</a>
-            </li>
-            <li title="Analisa a dificuldade dos níveis enviados.">
-                <a href="https://www.youtube.com/@Williamnobre">Nobre100</a>
-            </li>
-            <li title="Analisa a dificuldade dos níveis enviados.">
-                <a href="https://www.youtube.com/@RalksGD/">Betoneira</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="sidebar-section">
-        <h3>Logo atual</h3>
-        <ul>
-            <li title="Criador da logo utilizada atualmente pela Carrier List.">
-                <a href="https://www.youtube.com/@snukzinkk11">Snukzinkk</a>
-            </li>
-        </ul>
-    </div>
-
-</aside>
-
-<aside class="sidebar">
-
-        <div class="sidebar-section">
-        <h3>Última mudança da lista</h3>
-
-        <p class="update-text">
-            "Sweater Weather foi adicionado em #34 e Through The Decay foiadicionado em #36. Isso empurra Lit Fuse e SlaughterHouse para a Extended List e também Artificial Powder e Rhombus para Legacy List."
-        </p>
-
-        <span class="update-date">
-            31/07/2026, 05:26 PM
-        </span>
-    </div>
-
-</aside>
-
-<aside class="sidebar">
-
-    <div class="sidebar-section">
-    <h3>Último Submit</h3>
-    
-    <p class="update-text">
-        bxz12 → Cataclysm
-    </p>
-
-    </div>
-
-</aside>
-
-<aside class="sidebar">
-    
-    <div class="sidebar-section">
-        <h3>Estatísticas</h3>
-
-    <ul class="stats">
-        <li>Main List: <span>50 levels</span></li>
-        <li>Extended List: <span>50 levels</span></li>
-        <li>Legacy List: <span>23 levels</span></li>
-        <li>Total: <span>123 levels</span></li>
-    </ul>
-    
-    </div>
-
-</aside>
-
-<aside class="sidebar">
-
-    <div class="sidebar-section">
-    <h3>Enviar Level</h3>
-
-    <p class="submit-text">
-        Tem um level que merece entrar na Carrier List?
-        Envie um submit pelo formulário.
-    </p>
-
-    <a href="https://forms.gle/NvnsEsNUZUCS314Q8" class="submit-button" target="_blank">
-        Enviar Submit
-    </a>
 </div>
 
-</aside>
-
-</div>
 </main>
 
-<script>
-const searchInput = document.getElementById("searchInput");
-const cards = document.querySelectorAll(".card");
-
-searchInput.addEventListener("input", function () {
-    const value = searchInput.value.toLowerCase();
-
-    cards.forEach(card => {
-        const text = card.innerText.toLowerCase();
-
-        if (text.includes(value)) {
-            card.style.display = "";
-        } else {
-            card.style.display = "none";
-        }
-    });
-});
-</script>
+<footer class="footer">
+<p>Carrier List · 2026</p>
+</footer>
 
 </body>
 </html>
+```
