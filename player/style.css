@@ -79,10 +79,11 @@ body {
     box-shadow: 0 0 20px rgba(97,168,255,0.35);
 }
 
-.player-top {
+.player-top h1 {
     font-size: 23px;
-    background: linear-gradient(90deg,#ffffff,#61a8ff);
+    background: linear-gradient(90deg, #ffffff, #61a8ff);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
@@ -204,4 +205,116 @@ section h2{
         font-size: 28px;
     }
 
+}
+
+/* ===== TOP 3 ===== */
+
+/* TOP 1 — OURO */
+.player-card.top-1 {
+    border-color: #d4af37;
+}
+
+.player-card.top-1 .player-avatar {
+    border-color: #d4af37;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.35);
+}
+
+.player-card.top-1 .player-top h1 {
+    background: linear-gradient(90deg, #ffffff, #d4af37);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.player-card.top-1 .stats-grid {
+    border-color: #d4af37;
+}
+
+.player-card.top-1 .stat-box {
+    border-color: #d4af37;
+}
+
+.player-card.top-1 .stat-box h3 {
+    color: #d4af37;
+}
+
+.player-card.top-1 .stat-box:hover {
+    border-color: #f1d46a;
+}
+
+
+/* TOP 2 — PRATA */
+.player-card.top-2 {
+    border-color: #c0c0c0;
+}
+
+.player-card.top-2 .player-avatar {
+    border-color: #c0c0c0;
+    box-shadow: 0 0 20px rgba(192, 192, 192, 0.35);
+}
+
+.player-card.top-2 .player-top h1 {
+    background: linear-gradient(90deg, #ffffff, #c0c0c0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.player-card.top-2 .stats-grid {
+    border-color: #c0c0c0;
+}
+
+.player-card.top-2 .stat-box {
+    border-color: #c0c0c0;
+}
+
+.player-card.top-2 .stat-box h3 {
+    color: #c0c0c0;
+}
+
+.player-card.top-2 .stat-box:hover {
+    border-color: #eeeeee;
+}
+
+
+/* TOP 3 — BRONZE */
+.player-card.top-3 {
+    border-color: #cd7f32;
+}
+
+.player-card.top-3 .player-avatar {
+    border-color: #cd7f32;
+    box-shadow: 0 0 20px rgba(205, 127, 50, 0.35);
+}
+
+.player-card.top-3 .player-top h1 {
+    background: linear-gradient(90deg, #ffffff, #cd7f32);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.player-card.top-3 .stats-grid {
+    border-color: #cd7f32;
+}
+
+.player-card.top-3 .stat-box {
+    border-color: #cd7f32;
+}
+
+.player-card.top-3 .stat-box h3 {
+    color: #cd7f32;
+}
+
+.player-card.top-3 .stat-box:hover {
+    border-color: #e5a05c;
+}
+
+/* ===== 0 PONTOS ===== */
+.player-card.zero-points {
+    filter: grayscale(1);
+    opacity: 0.55;
 }

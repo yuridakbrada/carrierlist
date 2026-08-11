@@ -486,24 +486,48 @@ main {
     border-color: #d8b84c;
 }
 
-.rank-card:nth-child(1) .rank-position {
+.rank-card:nth-child(1) .rank-position,
+.rank-card:nth-child(1) .player-info a,
+.rank-card:nth-child(1) .rank-points {
     color: #d8b84c;
 }
+
+.rank-card:nth-child(1):hover {
+    border-color: #f0d66b;
+}
+
+
+/* TOP 2 */
 
 .rank-card:nth-child(2) {
     border-color: #bfc3c7;
 }
 
-.rank-card:nth-child(2) .rank-position {
+.rank-card:nth-child(2) .rank-position,
+.rank-card:nth-child(2) .player-info a,
+.rank-card:nth-child(2) .rank-points {
     color: #bfc3c7;
 }
+
+.rank-card:nth-child(2):hover {
+    border-color: #e5e7e9;
+}
+
+
+/* TOP 3 */
 
 .rank-card:nth-child(3) {
     border-color: #cd7f32;
 }
 
-.rank-card:nth-child(3) .rank-position {
+.rank-card:nth-child(3) .rank-position,
+.rank-card:nth-child(3) .player-info a,
+.rank-card:nth-child(3) .rank-points {
     color: #cd7f32;
+}
+
+.rank-card:nth-child(3):hover {
+    border-color: #e5a05c;
 }
 
 /* TOP 4 - 8 */
@@ -582,4 +606,10 @@ main {
         width: auto;
     }
 
+}
+
+/* 0 PONTOS */
+.rank-card.zero-points {
+    filter: grayscale(1);
+    opacity: 0.55;
 }
