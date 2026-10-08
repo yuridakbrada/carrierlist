@@ -36,8 +36,28 @@
 
 <section class="list">
 
-<div class="search-box">
-    <input type="text" id="searchInput" placeholder="🔎 Pesquisar nível">
+<div class="card">
+    <div class="info">
+        <h2>Troll Madness</h2>
+        <p>by zyphur</p>
+        <span class="points">Indisponível</span>
+    </div>
+</div>
+
+<div class="card">
+    <div class="info">
+        <h2>Acousticophobia</h2>
+        <p>by TheReakSquizz</p>
+        <span class="points">Indisponível</span>
+    </div>
+</div>
+
+<div class="card">
+    <div class="info">
+        <h2>STEELCORE</h2>
+        <p>by SirDany</p>
+        <span class="points">Indisponível</span>
+    </div>
 </div>
 
 <div class="card">
@@ -366,25 +386,6 @@
 
 </div>
 </main>
-
-<script>
-const searchInput = document.getElementById("searchInput");
-const cards = document.querySelectorAll(".card");
-
-searchInput.addEventListener("input", function () {
-    const value = searchInput.value.toLowerCase();
-
-    cards.forEach(card => {
-        const text = card.innerText.toLowerCase();
-
-        if (text.includes(value)) {
-            card.style.display = "";
-        } else {
-            card.style.display = "none";
-        }
-    });
-});
-</script>
 
 </body>
 </html>

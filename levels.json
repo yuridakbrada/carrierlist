@@ -1,0 +1,702 @@
+[
+  {
+    "name": "Solar Flare",
+    "creator": "Linear",
+    "list": "main",
+    "new": false,
+    "image": "solar_flare.avif"
+  },
+  {
+    "name": "Judgement Knights",
+    "creator": "HangerLord",
+    "list": "main",
+    "new": false,
+    "image": "judgement_knights.jpg"
+  },
+  {
+    "name": "Widestep",
+    "creator": "Demishio",
+    "list": "main",
+    "new": false,
+    "image": "widestep.jpg"
+  },
+  {
+    "name": "Thinking Space",
+    "creator": "Atomic",
+    "list": "main",
+    "new": false,
+    "image": "thinking_space.jpg"
+  },
+  {
+    "name": "Renevant",
+    "creator": "nicroplays",
+    "list": "main",
+    "new": false,
+    "image": "renevant.jpg"
+  },
+  {
+    "name": "shimmer",
+    "creator": "Amplittron",
+    "list": "main",
+    "new": false,
+    "image": "shimmer.jpg"
+  },
+  {
+    "name": "ta1LSD0ll",
+    "creator": "ta1lsdoll",
+    "list": "main",
+    "new": false,
+    "image": "ta1lsd0ll.jpg"
+  },
+  {
+    "name": "Rust",
+    "creator": "neigefeu",
+    "list": "main",
+    "new": false,
+    "image": "rust.webp"
+  },
+  {
+    "name": "Bloodlust",
+    "creator": "knobbelboy",
+    "list": "main",
+    "new": false,
+    "image": "bloodlust.jpg"
+  },
+  {
+    "name": "Congregation",
+    "creator": "Presta",
+    "list": "main",
+    "new": false,
+    "image": "congregation.webp"
+  },
+  {
+    "name": "Arctic Lights",
+    "creator": "EndLevel",
+    "list": "main",
+    "new": false,
+    "image": "arctic_lights.jpg"
+  },
+  {
+    "name": "Hyper Paracosm",
+    "creator": "ViRuZ",
+    "list": "main",
+    "new": false,
+    "image": "hyper_paracosm.jpg"
+  },
+  {
+    "name": "Sonic Wave",
+    "creator": "Cyclic",
+    "list": "main",
+    "new": false,
+    "image": "sonic_wave.jpg"
+  },
+  {
+    "name": "Sonic Wave Rebirth",
+    "creator": "Serponge",
+    "list": "main",
+    "new": false,
+    "image": "sonic_wave_rebirth.webp"
+  },
+  {
+    "name": "Artificial Ascent",
+    "creator": "ViPriN",
+    "list": "main",
+    "new": true,
+    "image": "artificial_ascent.jpg"
+  },
+  {
+    "name": "The Hell Zone",
+    "creator": "Stormfly",
+    "list": "main",
+    "new": false,
+    "image": "the_hell_zone.avif"
+  },
+  {
+    "name": "Balengu Vortex",
+    "creator": "lTemp",
+    "list": "main",
+    "new": false,
+    "image": "balengu_vortex.jpg"
+  },
+  {
+    "name": "ErebuS",
+    "creator": "Platnuu",
+    "list": "main",
+    "new": false,
+    "image": "erebus.webp"
+  },
+  {
+    "name": "Blade of Justice",
+    "creator": "Manix648",
+    "list": "main",
+    "new": false,
+    "image": "blade_of_justice.jpg"
+  },
+  {
+    "name": "Multition (Solo)",
+    "creator": "Mulpan",
+    "list": "main",
+    "new": false,
+    "image": "multition.jpg"
+  },
+  {
+    "name": "moment",
+    "creator": "lexycat",
+    "list": "main",
+    "new": false,
+    "image": "moment.jpg"
+  },
+  {
+    "name": "Sakupen Hell",
+    "creator": "TrusTa",
+    "list": "main",
+    "new": false,
+    "image": "sakupen_hell.webp"
+  },
+  {
+    "name": "MulLuna (Solo)",
+    "creator": "Mulpan",
+    "list": "main",
+    "new": false,
+    "image": "mulluna.jpg"
+  },
+  {
+    "name": "Bloodbath",
+    "creator": "Riot",
+    "list": "main",
+    "new": false,
+    "image": "bloodbath.jpg"
+  },
+  {
+    "name": "Sigma Interface",
+    "creator": "Platnuu",
+    "list": "main",
+    "new": false,
+    "image": "sigma_interface.jpg"
+  },
+  {
+    "name": "The Hell Dignity",
+    "creator": "Stormfly",
+    "list": "main",
+    "new": false,
+    "image": "the_hell_dignity.jpg"
+  },
+  {
+    "name": "Semicolon 3",
+    "creator": "TheRealXFuture",
+    "list": "main",
+    "new": false,
+    "image": "semicolon_3.jpg"
+  },
+  {
+    "name": "Reflective",
+    "creator": "Mojitoz",
+    "list": "main",
+    "new": false,
+    "image": "reflection.jpg"
+  },
+  {
+    "name": "NecropoliX",
+    "creator": "Namtar",
+    "list": "main",
+    "new": false,
+    "image": "necropolix.jpg"
+  },
+  {
+    "name": "Backlights",
+    "creator": "kodex360",
+    "list": "main",
+    "new": false,
+    "image": "backlights.jpg"
+  },
+  {
+    "name": "OXI",
+    "creator": "Sycro",
+    "list": "main",
+    "new": true,
+    "image": "oxi.jpg"
+  },
+  {
+    "name": "TROLLMACHINE",
+    "creator": "TROLLM4CHINE",
+    "list": "main",
+    "new": true,
+    "image": "trollmachine.jpg"
+  },
+  {
+    "name": "Robi",
+    "creator": "robianny",
+    "list": "main",
+    "new": false,
+    "image": "robi.jpg"
+  },
+  {
+    "name": "Cataclysm",
+    "creator": "GgBoy",
+    "list": "main",
+    "new": false,
+    "image": "cataclysm.jpg"
+  },
+  {
+    "name": "The Lost Existence",
+    "creator": "JonathanGD",
+    "list": "main",
+    "new": false,
+    "image": "the_lost_existence.jpg"
+  },
+  {
+    "name": "Niwa",
+    "creator": "Teno",
+    "list": "main",
+    "new": false,
+    "image": "niwa.jpg"
+  },
+  {
+    "name": "Precipitance",
+    "creator": "Extravagon",
+    "list": "main",
+    "new": false,
+    "image": "precipitance.jpg"
+  },
+  {
+    "name": "Sweater Weather",
+    "creator": "VelYT",
+    "list": "main",
+    "new": false,
+    "image": "sweater_weather.webp"
+  },
+  {
+    "name": "Acu",
+    "creator": "neigefeu",
+    "list": "main",
+    "new": false,
+    "image": "acu.jpg"
+  },
+  {
+    "name": "Through The Decay",
+    "creator": "sparktwo",
+    "list": "main",
+    "new": false,
+    "image": "through_the_decay.webp"
+  },
+  {
+    "name": "Thanatophobia",
+    "creator": "ARtu",
+    "list": "main",
+    "new": false,
+    "image": "thanatophobia.jpg"
+  },
+  {
+    "name": "Ice Carbon Diablo X",
+    "creator": "roadbose",
+    "list": "main",
+    "new": false,
+    "image": "ice_carbon_diablo_x.jpg"
+  },
+  {
+    "name": "CraZy III",
+    "creator": "DavJT",
+    "list": "main",
+    "new": false,
+    "image": "crazy_iii.jpg"
+  },
+  {
+    "name": "hi",
+    "creator": "Krmal",
+    "list": "main",
+    "new": false,
+    "image": "hi.jpg"
+  },
+  {
+    "name": "Invisible Deadlocked",
+    "creator": "Krmal",
+    "list": "main",
+    "new": false,
+    "image": "invisible_deadlocked.jpg"
+  },
+  {
+    "name": "Infinity lol",
+    "creator": "Icarrierpotato",
+    "list": "main",
+    "new": false,
+    "image": "infinity_lol.png"
+  },
+  {
+    "name": "Necropolis",
+    "creator": "IIINePtunEIII",
+    "list": "main",
+    "new": false,
+    "image": "necropolis.jpg"
+  },
+  {
+    "name": "Flat Major",
+    "creator": "EndLevel",
+    "list": "main",
+    "new": false,
+    "image": "flat_major.jpg"
+  },
+  {
+    "name": "Butiti II",
+    "creator": "JonathanGD",
+    "list": "main",
+    "new": false,
+    "image": "butiti_ii.jpg"
+  },
+  {
+    "name": "Acropolis",
+    "creator": "Zobros",
+    "list": "main",
+    "new": false,
+    "image": "acropolis.jpg"
+  },
+  {
+    "name": "Bit Reaper",
+    "creator": "Vlacc",
+    "list": "extended",
+    "new": false,
+    "image": "bit_reaper.jpg"
+  },
+  {
+    "name": "Ultra Funky",
+    "creator": "Icarrierpotato",
+    "list": "extended",
+    "new": false,
+    "image": "ultra_funky.png"
+  },
+  {
+    "name": "Supersonic",
+    "creator": "ZenthicAlpha",
+    "list": "extended",
+    "new": false,
+    "image": "supersonic.webp"
+  },
+  {
+    "name": "Denouement",
+    "creator": "Synactive GD",
+    "list": "extended",
+    "new": false,
+    "image": "denouement.jpg"
+  },
+  {
+    "name": "Lit Fuse",
+    "creator": "Krmal",
+    "list": "extended",
+    "new": false,
+    "image": "lit_fuse.jpg"
+  },
+  {
+    "name": "SlaughterHouse",
+    "creator": "Havok",
+    "list": "extended",
+    "new": false,
+    "image": "slaughterhouse.jpg"
+  },
+  {
+    "name": "Death Note",
+    "creator": "Ruf",
+    "list": "extended",
+    "new": false,
+    "image": "death_note.jpg"
+  },
+  {
+    "name": "Manic",
+    "creator": "Icarrierpotato",
+    "list": "extended",
+    "new": false,
+    "image": "manic.png"
+  },
+  {
+    "name": "Poltergeist",
+    "creator": "Andromeda",
+    "list": "extended",
+    "new": false,
+    "image": "poltergeist.jpg"
+  },
+  {
+    "name": "Sonic Wave Universe",
+    "creator": "LamHaiDoiGD",
+    "list": "extended",
+    "new": false,
+    "image": "sonic_wave_universe.webp"
+  },
+  {
+    "name": "Plasma Pulse",
+    "creator": "Giron",
+    "list": "extended",
+    "new": false,
+    "image": "plasma_pulse.webp"
+  },
+  {
+    "name": "ULTRA FAST COLLAB",
+    "creator": "NikVer",
+    "list": "extended",
+    "new": false,
+    "image": "ultra_fast_collab.webp"
+  },
+  {
+    "name": "Ultimate Demon Mix",
+    "creator": "Zobros",
+    "list": "extended",
+    "new": false,
+    "image": "ultimate_demon_mix.webp"
+  },
+  {
+    "name": "Windy Landscape",
+    "creator": "WOOGI1411",
+    "list": "extended",
+    "new": false,
+    "image": "windy_landscape.webp"
+  },
+  {
+    "name": "Magma Bound",
+    "creator": "ScorchVx",
+    "list": "extended",
+    "new": false,
+    "image": "magma_bound.webp"
+  },
+  {
+    "name": "Outpost",
+    "creator": "Xepheron",
+    "list": "extended",
+    "new": false,
+    "image": "outpost.png"
+  },
+  {
+    "name": "Horntail Cave",
+    "creator": "KeiAs",
+    "list": "extended",
+    "new": false,
+    "image": "horntail_cave.webp"
+  },
+  {
+    "name": "TENDO",
+    "creator": "gradientxd",
+    "list": "extended",
+    "new": false,
+    "image": "tendo.webp"
+  },
+  {
+    "name": "CraZy II",
+    "creator": "DavJT",
+    "list": "extended",
+    "new": false,
+    "image": "crazy_ii.webp"
+  },
+  {
+    "name": "Puzzle Trials",
+    "creator": "FunnyGame",
+    "list": "extended",
+    "new": false,
+    "image": "puzzle_trials.webp"
+  },
+  {
+    "name": "The Furious",
+    "creator": "knobbelboy",
+    "list": "extended",
+    "new": false,
+    "image": "the_furious.webp"
+  },
+  {
+    "name": "Stalemate",
+    "creator": "Nox",
+    "list": "extended",
+    "new": false,
+    "image": "stalemate.webp"
+  },
+  {
+    "name": "I Cant Fix You",
+    "creator": "IronIngot",
+    "list": "extended",
+    "new": false,
+    "image": "i_cant_fix_you.webp"
+  },
+  {
+    "name": "Cant let troll 3xrow",
+    "creator": "Icarrierpotato",
+    "list": "extended",
+    "new": false,
+    "image": "cant_let_troll_3xrow.png"
+  },
+  {
+    "name": "Whatsapp Circles",
+    "creator": "xkyy",
+    "list": "extended",
+    "new": false,
+    "image": "whatsapp_circles.webp"
+  },
+  {
+    "name": "Shonic Wave",
+    "creator": "AlemaneiroGD",
+    "list": "extended",
+    "new": false,
+    "image": "shonic_wave.png"
+  },
+  {
+    "name": "Badland",
+    "creator": "TamaN",
+    "list": "extended",
+    "new": false,
+    "image": "badland.png"
+  },
+  {
+    "name": "Hellaven II",
+    "creator": "Clasi",
+    "list": "extended",
+    "new": false,
+    "image": "hellaven_ii.webp"
+  },
+  {
+    "name": "Future Funk",
+    "creator": "JonathanGD",
+    "list": "extended",
+    "new": false,
+    "image": "future_funk.webp"
+  },
+  {
+    "name": "CraZy",
+    "creator": "DavJT",
+    "list": "extended",
+    "new": false,
+    "image": "crazy.webp"
+  },
+  {
+    "name": "Cant troll twice",
+    "creator": "Icarrierpotato",
+    "list": "extended",
+    "new": false,
+    "image": "cant_troll_twice.png"
+  },
+  {
+    "name": "TOE III",
+    "creator": "Manix648",
+    "list": "extended",
+    "new": false,
+    "image": "toe_iii.webp"
+  },
+  {
+    "name": "widder",
+    "creator": "2003devin",
+    "list": "extended",
+    "new": false,
+    "image": "widder.webp"
+  },
+  {
+    "name": "Double Dash",
+    "creator": "Zoroa",
+    "list": "extended",
+    "new": false,
+    "image": "double_dash.webp"
+  },
+  {
+    "name": "Different Descent",
+    "creator": "Danke",
+    "list": "extended",
+    "new": false,
+    "image": "different_descent.webp"
+  },
+  {
+    "name": "Potatoguy adven 3",
+    "creator": "BearWare",
+    "list": "extended",
+    "new": false,
+    "image": "potatoguy_adven_3.png"
+  },
+  {
+    "name": "Nine Circles",
+    "creator": "Zobros",
+    "list": "extended",
+    "new": false,
+    "image": "nine_circles.webp"
+  },
+  {
+    "name": "Jawbreaker",
+    "creator": "ZenthicAlpha",
+    "list": "extended",
+    "new": false,
+    "image": "jawbreaker.webp"
+  },
+  {
+    "name": "Troll Machine",
+    "creator": "Nobre100",
+    "list": "extended",
+    "new": false,
+    "image": "troll_machine.jpg"
+  },
+  {
+    "name": "Trollgeist",
+    "creator": "THABR",
+    "list": "extended",
+    "new": false,
+    "image": "trollgeist.jpg"
+  },
+  {
+    "name": "Troll Out",
+    "creator": "Nobre100",
+    "list": "extended",
+    "new": false,
+    "image": "troll_out.jpg"
+  },
+  {
+    "name": "Syobon Action 3",
+    "creator": "sweetdude",
+    "list": "extended",
+    "new": false,
+    "image": "syobon_action_3.webp"
+  },
+  {
+    "name": "Underground",
+    "creator": "AbstrackDark",
+    "list": "extended",
+    "new": false,
+    "image": "underground.webp"
+  },
+  {
+    "name": "Cant let troll",
+    "creator": "Defectum",
+    "list": "extended",
+    "new": false,
+    "image": "cant_let_troll.webp"
+  },
+  {
+    "name": "Megalovania",
+    "creator": "EternaswipMAX",
+    "list": "extended",
+    "new": false,
+    "image": "megalovania.webp"
+  },
+  {
+    "name": "Golden Hope",
+    "creator": "Terron",
+    "list": "extended",
+    "new": false,
+    "image": "golden_hope.webp"
+  },
+  {
+    "name": "Tower Descent",
+    "creator": "pocke",
+    "list": "extended",
+    "new": false,
+    "image": "tower_descent.webp"
+  },
+  {
+    "name": "Torch",
+    "creator": "DextrinE",
+    "list": "extended",
+    "new": false,
+    "image": "torch.webp"
+  },
+  {
+    "name": "Fire Temple",
+    "creator": "Michigun",
+    "list": "extended",
+    "new": false,
+    "image": "fire_temple.webp"
+  },
+  {
+    "name": "Darkness Keeper",
+    "creator": "AbstrackDark",
+    "list": "extended",
+    "new": false,
+    "image": "darkness_keeper.webp"
+  }
+]
