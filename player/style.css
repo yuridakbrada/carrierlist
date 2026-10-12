@@ -1,4 +1,10 @@
-/* ===== RESET ===== */
+
+/* ========================================
+   CARRIER LIST — PLAYER PROFILES
+   Visual inspirado no CSS do index.html
+   ======================================== */
+
+/* RESET */
 
 * {
     margin: 0;
@@ -6,315 +12,360 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* BASE */
+
+:root {
+    --background: #252629;
+    --surface: #303136;
+    --surface-hover: #393a40;
+    --surface-dark: #202124;
+    --border: #414247;
+    --text: #eeeeef;
+    --muted: #b0b1b6;
+    --accent: #d8d9dc;
+    --link: #d8d9dc;
+}
+
 body {
-    background: #111317;
-    color: #f2f2f2;
+    background: var(--background);
+    color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     line-height: 1.5;
 }
 
-/* ===== HEADER ===== */
+a {
+    color: var(--link);
+}
+
+/* HEADER */
 
 .header {
-    background: #191c22;
-    border-bottom: 1px solid #2c313a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--surface-dark);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 2px 5px rgb(0 0 0 / 15%);
 }
 
 .top-bar {
-    max-width: 1100px;
+    max-width: 1200px;
+    min-height: 65px;
     margin: auto;
-    height: 65px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 25px;
+    gap: 24px;
 }
 
 .logo {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .logo img {
-    height: 38px;
-    width: auto;
     display: block;
+    width: auto;
+    height: 38px;
+    transition: opacity 0.15s ease;
 }
 
-/* ===== CONTAINER ===== */
+.logo:hover img {
+    opacity: 0.8;
+}
+
+/* PLAYER CONTAINER */
 
 .players {
     display: flex;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 30px 20px;
 }
 
 .player-card {
     width: 100%;
     max-width: 950px;
-    background: linear-gradient(145deg, #1d222b, #161a21);
-    border: 1px solid #343b48;
-    border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 12%);
 }
 
-/* ===== TOPO ===== */
+/* PLAYER HEADER */
 
 .player-top {
     display: flex;
     align-items: center;
     gap: 22px;
-    padding: 28px;
-    border-bottom: 1px solid #303640;
+    padding: 25px;
+    background: var(--surface-dark);
+    border-bottom: 1px solid var(--border);
 }
 
 .player-avatar {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    border: 3px solid #61a8ff;
+    flex-shrink: 0;
     object-fit: cover;
-    box-shadow: 0 0 20px rgba(97,168,255,0.35);
+    border-radius: 3px;
+    border: 1px solid #515258;
+    box-shadow: none;
 }
 
 .player-top h1 {
-    font-size: 23px;
-    background: linear-gradient(90deg, #ffffff, #61a8ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--text);
+    font-size: 24px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
 }
 
-/* ===== ESTATÍSTICAS ===== */
+/* STATISTICS */
 
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 18px;
-    padding: 25px;
+    gap: 12px;
+    padding: 20px;
 }
 
 .stat-box {
-    background: #171b22;
-    border: 1px solid #303844;
-    border-radius: 12px;
-    padding: 20px;
-    transition: 0.2s;
+    padding: 17px;
+    background: var(--surface-dark);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    transition: background 0.15s ease, border-color 0.15s ease;
 }
 
 .stat-box:hover {
-    border-color: #61a8ff;
-    transform: translateY(-3px);
+    background: var(--surface-hover);
+    border-color: #68696e;
+    transform: none;
 }
 
 .stat-box h3 {
-    color: #9ca4b2;
-    font-size: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: .08em;
+    letter-spacing: 0.04em;
 }
 
 .stat-box p {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
+    color: var(--text);
+    font-size: 23px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
 }
 
-/* ===== SEPARADOR ===== */
+/* SEPARATOR */
 
 .sep {
     height: 1px;
-    background: #303640;
+    background: var(--border);
 }
 
-/* ===== SEÇÕES ===== */
+/* SECTIONS */
 
 section {
-    padding: 28px;
+    padding: 25px;
 }
 
 section h2 {
-    color: #61a8ff;
-    font-size: 22px;
-    margin-bottom: 18px;
-}
-
-/* ===== LISTA ===== */
-
-section{
-    padding: 25px;
-    text-align: center;
-}
-
-section h2{
     margin-bottom: 15px;
-    font-size: 24px;
-    color: #fff;
+    padding-bottom: 9px;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    font-size: 18px;
     font-weight: 600;
 }
+
+/* LEVEL LIST */
 
 .level-list {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
 }
 
 .level-list li {
     display: inline;
     margin: 0;
     padding: 0;
-    border: none;
     background: none;
+    border: none;
 }
 
 .level-list li::after {
     content: " • ";
-    color: #777;
+    color: #85868c;
 }
 
 .level-list li:last-child::after {
     content: "";
 }
 
-/* ===== TEXTO VAZIO ===== */
+/* EMPTY TEXT */
 
 .empty {
-    color: #8b929d;
+    color: var(--muted);
     font-style: italic;
 }
 
-/* ===== RESPONSIVO ===== */
+/* ========================================
+   TOP 3 — PLAYER PROFILE ACCENTS
+   ======================================== */
+
+/* TOP 1 — GOLD */
+
+.player-card.top-1 {
+    border-color: #bda14f;
+}
+
+.player-card.top-1 .player-avatar {
+    border: 2px solid #bda14f;
+}
+
+.player-card.top-1 .player-top h1 {
+    color: #e6c66b;
+}
+
+.player-card.top-1 .stat-box {
+    border-color: #806f3e;
+}
+
+.player-card.top-1 .stat-box h3 {
+    color: #e6c66b;
+}
+
+.player-card.top-1 .stat-box:hover {
+    border-color: #bda14f;
+}
+
+/* TOP 2 — SILVER */
+
+.player-card.top-2 {
+    border-color: #aeb2b8;
+}
+
+.player-card.top-2 .player-avatar {
+    border: 2px solid #aeb2b8;
+}
+
+.player-card.top-2 .player-top h1 {
+    color: #d1d4d8;
+}
+
+.player-card.top-2 .stat-box {
+    border-color: #74777d;
+}
+
+.player-card.top-2 .stat-box h3 {
+    color: #d1d4d8;
+}
+
+.player-card.top-2 .stat-box:hover {
+    border-color: #aeb2b8;
+}
+
+/* TOP 3 — BRONZE */
+
+.player-card.top-3 {
+    border-color: #b77c50;
+}
+
+.player-card.top-3 .player-avatar {
+    border: 2px solid #b77c50;
+}
+
+.player-card.top-3 .player-top h1 {
+    color: #d59b70;
+}
+
+.player-card.top-3 .stat-box {
+    border-color: #80583d;
+}
+
+.player-card.top-3 .stat-box h3 {
+    color: #d59b70;
+}
+
+.player-card.top-3 .stat-box:hover {
+    border-color: #b77c50;
+}
+
+/* ZERO POINTS */
+
+.player-card.zero-points {
+    filter: grayscale(1);
+    opacity: 0.55;
+}
+
+/* RESPONSIVE */
 
 @media (max-width: 700px) {
+    .players {
+        padding: 16px 12px;
+    }
 
     .player-top {
         flex-direction: column;
         text-align: center;
+        padding: 22px 16px;
     }
 
     .player-avatar {
-        width: 75px;
-        height: 75px;
+        width: 80px;
+        height: 80px;
     }
 
     .player-top h1 {
-        font-size: 28px;
+        font-size: 22px;
     }
 
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+        padding: 12px;
+    }
+
+    .stat-box {
+        padding: 13px;
+    }
+
+    .stat-box p {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 18px 14px;
+    }
 }
 
-/* ===== TOP 3 ===== */
+@media (max-width: 420px) {
+    .top-bar {
+        padding: 10px 12px;
+    }
 
-/* TOP 1 — OURO */
-.player-card.top-1 {
-    border-color: #d4af37;
-}
+    .logo img {
+        height: 32px;
+    }
 
-.player-card.top-1 .player-avatar {
-    border-color: #d4af37;
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.35);
-}
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
 
-.player-card.top-1 .player-top h1 {
-    background: linear-gradient(90deg, #ffffff, #d4af37);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
-
-.player-card.top-1 .stats-grid {
-    border-color: #d4af37;
-}
-
-.player-card.top-1 .stat-box {
-    border-color: #d4af37;
-}
-
-.player-card.top-1 .stat-box h3 {
-    color: #d4af37;
-}
-
-.player-card.top-1 .stat-box:hover {
-    border-color: #f1d46a;
-}
-
-
-/* TOP 2 — PRATA */
-.player-card.top-2 {
-    border-color: #c0c0c0;
-}
-
-.player-card.top-2 .player-avatar {
-    border-color: #c0c0c0;
-    box-shadow: 0 0 20px rgba(192, 192, 192, 0.35);
-}
-
-.player-card.top-2 .player-top h1 {
-    background: linear-gradient(90deg, #ffffff, #c0c0c0);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
-
-.player-card.top-2 .stats-grid {
-    border-color: #c0c0c0;
-}
-
-.player-card.top-2 .stat-box {
-    border-color: #c0c0c0;
-}
-
-.player-card.top-2 .stat-box h3 {
-    color: #c0c0c0;
-}
-
-.player-card.top-2 .stat-box:hover {
-    border-color: #eeeeee;
-}
-
-
-/* TOP 3 — BRONZE */
-.player-card.top-3 {
-    border-color: #cd7f32;
-}
-
-.player-card.top-3 .player-avatar {
-    border-color: #cd7f32;
-    box-shadow: 0 0 20px rgba(205, 127, 50, 0.35);
-}
-
-.player-card.top-3 .player-top h1 {
-    background: linear-gradient(90deg, #ffffff, #cd7f32);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
-
-.player-card.top-3 .stats-grid {
-    border-color: #cd7f32;
-}
-
-.player-card.top-3 .stat-box {
-    border-color: #cd7f32;
-}
-
-.player-card.top-3 .stat-box h3 {
-    color: #cd7f32;
-}
-
-.player-card.top-3 .stat-box:hover {
-    border-color: #e5a05c;
-}
-
-/* ===== 0 PONTOS ===== */
-.player-card.zero-points {
-    filter: grayscale(1);
-    opacity: 0.55;
+    .player-top h1 {
+        font-size: 20px;
+    }
 }

@@ -53,7 +53,7 @@
     "creator": "neigefeu",
     "list": "main",
     "new": false,
-    "image": "rust.webp"
+    "image": "rust.jpg"
   },
   {
     "name": "Bloodlust",
@@ -77,6 +77,13 @@
     "image": "arctic_lights.jpg"
   },
   {
+    "name": "Molten Gear",
+    "creator": "knobbelboy",
+    "list": "main",
+    "new": true,
+    "image": "molten_gear.jpg"
+  },
+  {
     "name": "Hyper Paracosm",
     "creator": "ViRuZ",
     "list": "main",
@@ -89,13 +96,62 @@
     "list": "main",
     "new": false,
     "image": "sonic_wave.jpg"
-  },
+  }, 
   {
     "name": "Sonic Wave Rebirth",
     "creator": "Serponge",
     "list": "main",
     "new": false,
     "image": "sonic_wave_rebirth.webp"
+  },
+  {
+    "name": "LUMINA",
+    "creator": "hechie",
+    "list": "main",
+    "new": true,
+    "image": "lumina.jpg"
+  },   
+  {
+    "name": "Generic Wave",
+    "creator": "Pennutoh",
+    "list": "main",
+    "new": true,
+    "image": "generic_wave.jpg"
+  },
+  {
+    "name": "Thunderzone",
+    "creator": "Cersia",
+    "list": "main",
+    "new": true,
+    "image": "thunderzone.jpg"
+  },
+  {
+    "name": "Catalyze",
+    "creator": "ZephiroX",
+    "list": "main",
+    "new": true,
+    "image": "catalyze.jpg"
+  }, 
+  {
+    "name": "Digital Descent",
+    "creator": "ViPriN",
+    "list": "main",
+    "new": true,
+    "image": "digital_descent.jpg"
+  },
+  {
+    "name": "Xronier",
+    "creator": "JinoBeats",
+    "list": "main",
+    "new": true,
+    "image": "xronier.jpg"
+  },
+  {
+    "name": "Delta Interface",
+    "creator": "Platnuu",
+    "list": "main",
+    "new": true,
+    "image": "delta_interface.jpg"
   },
   {
     "name": "Artificial Ascent",
@@ -105,11 +161,11 @@
     "image": "artificial_ascent.jpg"
   },
   {
-    "name": "The Hell Zone",
-    "creator": "Stormfly",
+    "name": "Quantum Processing",
+    "creator": "Riot",
     "list": "main",
-    "new": false,
-    "image": "the_hell_zone.avif"
+    "new": true,
+    "image": "quantum_processing.jpg"
   },
   {
     "name": "Balengu Vortex",
@@ -117,6 +173,20 @@
     "list": "main",
     "new": false,
     "image": "balengu_vortex.jpg"
+  },
+  {
+    "name": "The Hell Zone",
+    "creator": "Stormfly",
+    "list": "main",
+    "new": false,
+    "image": "the_hell_zone.avif"
+  },
+  {
+    "name": "Auditory Breaker",
+    "creator": "LazerBlitz",
+    "list": "main",
+    "new": true,
+    "image": "auditory_breaker.jpg"
   },
   {
     "name": "ErebuS",
@@ -282,70 +352,70 @@
   {
     "name": "Thanatophobia",
     "creator": "ARtu",
-    "list": "main",
+    "list": "extended",
     "new": false,
     "image": "thanatophobia.jpg"
   },
   {
     "name": "Ice Carbon Diablo X",
     "creator": "roadbose",
-    "list": "main",
+    "list": "extended",
     "new": false,
     "image": "ice_carbon_diablo_x.jpg"
   },
   {
     "name": "CraZy III",
     "creator": "DavJT",
-    "list": "main",
+    "list": "extended",
     "new": false,
     "image": "crazy_iii.jpg"
   },
   {
     "name": "hi",
     "creator": "Krmal",
-    "list": "main",
+    "list": "extended",
     "new": false,
     "image": "hi.jpg"
   },
   {
     "name": "Invisible Deadlocked",
     "creator": "Krmal",
-    "list": "main",
+    "list": "extended",
     "new": false,
     "image": "invisible_deadlocked.jpg"
   },
   {
     "name": "Infinity lol",
     "creator": "Icarrierpotato",
-    "list": "main",
+    "list": "extended",
     "new": false,
     "image": "infinity_lol.png"
   },
   {
     "name": "Necropolis",
     "creator": "IIINePtunEIII",
-    "list": "main",
+    "list": "extended",
     "new": false,
     "image": "necropolis.jpg"
   },
   {
     "name": "Flat Major",
     "creator": "EndLevel",
-    "list": "main",
+    "list": "extended",
     "new": false,
     "image": "flat_major.jpg"
   },
   {
     "name": "Butiti II",
     "creator": "JonathanGD",
-    "list": "main",
+    "list": "extended",
     "new": false,
     "image": "butiti_ii.jpg"
   },
   {
     "name": "Acropolis",
     "creator": "Zobros",
-    "list": "main",
+    "list": "extended",
     "new": false,
     "image": "acropolis.jpg"
   },
@@ -628,75 +698,5 @@
     "list": "extended",
     "new": false,
     "image": "trollgeist.jpg"
-  },
-  {
-    "name": "Troll Out",
-    "creator": "Nobre100",
-    "list": "extended",
-    "new": false,
-    "image": "troll_out.jpg"
-  },
-  {
-    "name": "Syobon Action 3",
-    "creator": "sweetdude",
-    "list": "extended",
-    "new": false,
-    "image": "syobon_action_3.webp"
-  },
-  {
-    "name": "Underground",
-    "creator": "AbstrackDark",
-    "list": "extended",
-    "new": false,
-    "image": "underground.webp"
-  },
-  {
-    "name": "Cant let troll",
-    "creator": "Defectum",
-    "list": "extended",
-    "new": false,
-    "image": "cant_let_troll.webp"
-  },
-  {
-    "name": "Megalovania",
-    "creator": "EternaswipMAX",
-    "list": "extended",
-    "new": false,
-    "image": "megalovania.webp"
-  },
-  {
-    "name": "Golden Hope",
-    "creator": "Terron",
-    "list": "extended",
-    "new": false,
-    "image": "golden_hope.webp"
-  },
-  {
-    "name": "Tower Descent",
-    "creator": "pocke",
-    "list": "extended",
-    "new": false,
-    "image": "tower_descent.webp"
-  },
-  {
-    "name": "Torch",
-    "creator": "DextrinE",
-    "list": "extended",
-    "new": false,
-    "image": "torch.webp"
-  },
-  {
-    "name": "Fire Temple",
-    "creator": "Michigun",
-    "list": "extended",
-    "new": false,
-    "image": "fire_temple.webp"
-  },
-  {
-    "name": "Darkness Keeper",
-    "creator": "AbstrackDark",
-    "list": "extended",
-    "new": false,
-    "image": "darkness_keeper.webp"
   }
 ]
