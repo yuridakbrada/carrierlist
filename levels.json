@@ -7,6 +7,13 @@
     "image": "solar_flare.avif"
   },
   {
+    "name": "Aerial Gleam",
+    "creator": "EndLevel",
+    "list": "main",
+    "new": true,
+    "image": "aerial_gleam.jpg"
+  },
+  {
     "name": "Judgement Knights",
     "creator": "HangerLord",
     "list": "main",
@@ -345,7 +352,7 @@
   {
     "name": "Through The Decay",
     "creator": "sparktwo",
-    "list": "main",
+    "list": "extended",
     "new": false,
     "image": "through_the_decay.webp"
   },
@@ -691,12 +698,5 @@
     "list": "extended",
     "new": false,
     "image": "troll_machine.jpg"
-  },
-  {
-    "name": "Trollgeist",
-    "creator": "THABR",
-    "list": "extended",
-    "new": false,
-    "image": "trollgeist.jpg"
   }
 ]

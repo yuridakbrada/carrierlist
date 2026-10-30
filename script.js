@@ -191,7 +191,7 @@ function showLoadError(error) {
 
     message.className = "load-error";
     message.textContent =
-        "Não foi possível carregar a lista. Confira se levels.json e points.json estão na pasta correta e abra o site por um servidor local.";
+        "Não foi possível carregar a lista.";
 
     container.replaceChildren(message);
 }
