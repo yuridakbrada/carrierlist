@@ -1,5 +1,12 @@
 [
   {
+    "name": "Saul Goodman",
+    "creator": "Renn241",
+    "list": "main",
+    "new": true,
+    "image": "saul_goodman.jpg"
+  },
+  {
     "name": "Solar Flare",
     "creator": "Linear",
     "list": "main",
@@ -189,6 +196,13 @@
     "image": "the_hell_zone.avif"
   },
   {
+    "name": "Hatred",
+    "creator": "SrGuillester",
+    "list": "main",
+    "new": false,
+    "image": "hatred.jpg"
+  },
+  {
     "name": "Auditory Breaker",
     "creator": "LazerBlitz",
     "list": "main",
@@ -338,14 +352,14 @@
   {
     "name": "Sweater Weather",
     "creator": "VelYT",
-    "list": "main",
+    "list": "extended",
     "new": false,
     "image": "sweater_weather.webp"
   },
   {
     "name": "Acu",
     "creator": "neigefeu",
-    "list": "main",
+    "list": "extended",
     "new": false,
     "image": "acu.jpg"
   },
